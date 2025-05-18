@@ -55,21 +55,26 @@ Start a chat with your bot, send `/start`, and then paste any Pinterest link (pi
 
 The bot deletes video files right after sending them to the user. The `downloads/` directory is created automatically if it doesn’t exist.
 
+## Docker
+
+You can run this bot inside a Docker container.
+
+### Build the Docker image:
+
+```
+docker build -t pinterest-bot .
+```
+
+### Run the container:
+
+```
+docker run -e TOKEN=your_bot_token pinterest-bot
+```
+
 ## ⚠️ Notes
 
 - **You may need to install `ffmpeg`** on some systems (especially Linux) for proper video handling.
 - `yt-dlp` may not support some private or protected Pinterest content.
-
-## 📁 Project Structure
-
-```
-pinterest-bot/
-├── app/
-│   └── main.py           # Main bot logic
-├── downloads/            # Temporary folder for video files
-├── requirements.txt      # Python dependencies
-└── README.md             # This file
-```
 
 ## License
 
