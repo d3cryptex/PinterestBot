@@ -79,3 +79,9 @@ docker run -e TOKEN=your_bot_token pinterest-bot
 ## License
 
 MIT — free to use, learn, modify, and share!
+
+---
+
+Made with ❤️ to help you **learn by building**.
+
+By **d3cryptex**
