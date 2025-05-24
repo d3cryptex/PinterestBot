@@ -3,3 +3,4 @@ aiohttp==3.9.5
 requests==2.31.0
 beautifulsoup4==4.12.3
 yt-dlp==2024.04.09
+selenium
