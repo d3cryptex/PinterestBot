@@ -149,6 +149,11 @@ async def send_media_with_buttons(message: Message, user_id: int):
             reply_markup=markup
         )
 
+        try:
+            os.remove(media_item["path"])
+        except Exception as e:
+            print(f"⚠️ Error deleting video file: {e}")
+
 @dp.callback_query()
 async def callback_handler(callback: CallbackQuery):
     user_id = callback.from_user.id
